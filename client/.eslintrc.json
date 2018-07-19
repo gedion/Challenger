@@ -1,0 +1,9 @@
+{
+  "extends": ["semistandard", "standard-react"],
+  "globals": {
+    "styles": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8
+  }
+}

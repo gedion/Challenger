@@ -1,0 +1,7 @@
+server/config/*.json5
+node_modules
+coverage/
+client/build/*.hot-update.*
+/client/build/*
+package-lock.json
+.npmrc

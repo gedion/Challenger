@@ -1,0 +1,7 @@
+apps:
+  - script : server/server.js
+    watch  : false 
+    name   : 'isCryptSolution'
+    env    :
+      NODE_ENV: production
+      PORT: 10449 

@@ -1,0 +1,8 @@
+apps:
+  - script : server/server.js
+    node_args : "--inspect=0.0.0.0:8443"
+    watch  : true
+    name   : 'isCryptSolution'
+    env    :
+      NODE_ENV: development
+      PORT: 10456

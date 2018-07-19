@@ -1,0 +1,16 @@
+{
+  "presets": [
+    "react",
+    ["es2015", {"modules": false, "loose": true}],
+    "stage-2"
+  ],
+
+  "plugins": ["syntax-dynamic-import"],
+  "ignore": ["node_modules"],
+
+  "env": {
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    }
+  }
+}

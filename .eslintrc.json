@@ -1,0 +1,14 @@
+{
+  "extends": ["semistandard", "standard-react"],
+  "globals": {
+    "styles": true
+  },
+  "env": {
+    "node": true,
+    "mocha": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8
+  }
+}

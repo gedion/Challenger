@@ -1,0 +1,7 @@
+apps:
+  - script : server/server.js
+    watch  : true
+    name   : 'oit-canvas-ppsft-lti-enroll-observer' 
+    env    :
+      NODE_ENV: test
+      PORT: 10449 
