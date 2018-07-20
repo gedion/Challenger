@@ -50,19 +50,14 @@ class LandingPage {
   }
 
   handleViewObqRequest (request, response, next) {
-     //let user = _.get(request, 'session.user');
-
-    let user = _.get(request, 'session.user') || {
-      userid: 1,
-      cssCommon: ''
-    };
+    let user = _.get(request, 'session.user');
 
     if (!_.isObject(user)) {
       next({name: 'UnauthorizedError'});
     } else {
       let title = this.conf.get('ui.settings.title');
       let appInit = {
-        title 
+        title
       };
       response.render('main_jade', this.buildHttpResponse(title, user, appInit));
     }

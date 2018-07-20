@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-
+const testJSONFN  = path.join(__dirname, '../server/config/test.json5');
 let config = {
   https: {
     sslCaBundleCrt: path.join(__dirname, './../fixtures/ca-bundle.crt'),
@@ -24,3 +24,4 @@ let configFilename = path.join(__dirname, '../server/config/test.json5');
 if (!fs.existsSync(configFilename)) {
   fs.writeFileSync(configFilename, JSON.stringify(config));
 }
+process.env.EXTRA_CONFIG = configFilename; //Just for the sake of branch coverage

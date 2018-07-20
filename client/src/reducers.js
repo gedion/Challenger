@@ -8,7 +8,7 @@ let defaultState = { };
 let initState = _.isUndefined(window.appInit)
   ? defaultState : window.appInit;
 
-const app = function (state = initState, action) {
+const app = function (state, action) {
   switch (action.type) {
     default:
       return state;
