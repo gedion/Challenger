@@ -49,15 +49,61 @@ class LandingPage {
     }, this);
   }
 
+  getCodeCards () {
+    return [{
+          category: 'Programming Blogs',
+          title: 'PG1: A'
+         },{
+          category: 'Programming Blogs',
+          title: 'PG1: B'
+         },{
+          category: 'Programming Blogs',
+          title: 'PG1: C'
+         },{
+          category: 'Code Fight Challenge',
+          title: 'Fight: Arrays'
+         },{
+          category: 'Code Fight Challenge',
+          title: 'Fight: Strings'
+         },{
+          category: 'Daily Summary',
+          title: 'Day 1'
+         },{
+          category: 'Daily Summary',
+          title: 'Day 2'
+         },{
+          category: 'Daily Summary',
+          title: 'Day 3'
+         }];
+  }
+
   handleViewObqRequest (request, response, next) {
-    let user = _.get(request, 'session.user');
+    let user = _.get(request, 'session.user') || {
+      id:1,
+      cssCommon: ''
+    };
 
     if (!_.isObject(user)) {
       next({name: 'UnauthorizedError'});
     } else {
       let title = this.conf.get('ui.settings.title');
+      let codeCards = this.getCodeCards();
       let appInit = {
-        title
+        title,
+        showCodeDrawer: false ,
+        selectedCodeDrawerItem: '',
+        codeCategories: [{
+            caption: 'Programming Blogs',
+            legend: 'July 21, 2018'
+          },{
+            caption: 'Code Fight Challenge',
+            legend: 'July 21, 2018'
+          },{
+            caption: 'Daily Summary',
+            legend: 'July 21, 2018'
+          }],
+        codeCards: codeCards,
+        selectedCodeCards: codeCards
       };
       response.render('main_jade', this.buildHttpResponse(title, user, appInit));
     }

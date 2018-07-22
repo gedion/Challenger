@@ -1,0 +1,87 @@
+{
+  "title": "Hello World",
+  "showCodeDrawer": false,
+  "selectedCodeDrawerItem": "",
+  "codeCategories": [
+    {
+      "caption": "Programming Blogs",
+      "legend": "July 21, 2018"
+    },
+    {
+      "caption": "Code Fight Challenge",
+      "legend": "July 21, 2018"
+    },
+    {
+      "caption": "Daily Summary",
+      "legend": "July 21, 2018"
+    }
+  ],
+  "codeCards": [
+    {
+      "category": "Programming Blogs",
+      "title": "PG1: A"
+    },
+    {
+      "category": "Programming Blogs",
+      "title": "PG1: B"
+    },
+    {
+      "category": "Programming Blogs",
+      "title": "PG1: C"
+    },
+    {
+      "category": "Code Fight Challenge",
+      "title": "Fight: Arrays"
+    },
+    {
+      "category": "Code Fight Challenge",
+      "title": "Fight: Strings"
+    },
+    {
+      "category": "Daily Summary",
+      "title": "Day 1"
+    },
+    {
+      "category": "Daily Summary",
+      "title": "Day 2"
+    },
+    {
+      "category": "Daily Summary",
+      "title": "Day 3"
+    }
+  ],
+  "selectedCodeCards": [
+    {
+      "category": "Programming Blogs",
+      "title": "PG1: A"
+    },
+    {
+      "category": "Programming Blogs",
+      "title": "PG1: B"
+    },
+    {
+      "category": "Programming Blogs",
+      "title": "PG1: C"
+    },
+    {
+      "category": "Code Fight Challenge",
+      "title": "Fight: Arrays"
+    },
+    {
+      "category": "Code Fight Challenge",
+      "title": "Fight: Strings"
+    },
+    {
+      "category": "Daily Summary",
+      "title": "Day 1"
+    },
+    {
+      "category": "Daily Summary",
+      "title": "Day 2"
+    },
+    {
+      "category": "Daily Summary",
+      "title": "Day 3"
+    }
+  ]
+}

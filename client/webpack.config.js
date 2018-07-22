@@ -48,8 +48,14 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]__[hash:base64:5]',
-        ]  
-      }, 
+        ]
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader',
+        include: path.join(__dirname, 'node_modules'), // oops, this also includes flexboxgrid
+        exclude: /flexboxgrid/ // so we have to exclude it
+      },
       {
         enforce: 'pre',
         test: /\.js*/,

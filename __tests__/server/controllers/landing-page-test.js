@@ -7,6 +7,11 @@ const conf = require('../../../server/config/config');
 const ControllerLandingPage = require('../../../server/controllers/LandingPage');
 let controllerLandingPage = new ControllerLandingPage(conf);
 
+import fs from 'fs';
+import path from 'path';
+let initAppState = fs.readFileSync(path.join(__dirname, '../../../fixtures/init-app-state.json'), 'utf8');
+initAppState = JSON.parse(initAppState);
+
 describe('Tests server landing page controller', () => {
   let request;
   let response;
@@ -117,7 +122,7 @@ describe('Tests server landing page controller', () => {
       title : 'Hello World',
       user: "{\"userid\":1,\"cssCommon\":\"\"}",
       cssCommon: '',
-      appInit: "{\"title\":\"Hello World\"}"
+      appInit: JSON.stringify(initAppState)
     });
     expect(next.mock.calls.length).toEqual(0);
   });
