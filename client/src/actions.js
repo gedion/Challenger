@@ -10,4 +10,3 @@ export function setDrawerListItem (dispatch, item) {
   return dispatch({ type: SET_SELECTED_CODE_DRAWER_ITEM, data: item });
 }
 
-

@@ -1,8 +1,6 @@
 
 'use strict';
 
-const _ = require('lodash');
-
 const conf = require('../../../server/config/config');
 const ControllerLandingPage = require('../../../server/controllers/LandingPage');
 let controllerLandingPage = new ControllerLandingPage(conf);
@@ -29,7 +27,7 @@ describe('Tests server landing page controller', () => {
       send,
       end,
       render
-    }
+    };
     sendFile.mockImplementation(() => response);
     status.mockImplementation(() => response);
     send.mockImplementation(() => response);
@@ -43,9 +41,9 @@ describe('Tests server landing page controller', () => {
           cssCommon: ''
         }
       }
-    }
+    };
     next = jest.fn();
-  })
+  });
 
   it('should build a session object', () => {
     let session = controllerLandingPage.buildSession();
@@ -60,7 +58,7 @@ describe('Tests server landing page controller', () => {
   it('should build a token to be used on the client side for api calls ', () => {
     let user = {
       userid: 1
-    }
+    };
     let token = controllerLandingPage.buildToken(user);
     expect(token).toEqual(expect.any(String));
   });
@@ -70,12 +68,12 @@ describe('Tests server landing page controller', () => {
     let user = {
       userid: 1,
       cssCommon: ''
-    }
+    };
     var appInit = {};
     let session = controllerLandingPage.buildHttpResponse(title, user, appInit);
     expect(session).toEqual({
       title: title,
-      user: "{\"userid\":1,\"cssCommon\":\"\"}",
+      user: '{"userid":1,"cssCommon":""}',
       cssCommon: '',
       appInit: '{}'
     });
@@ -90,7 +88,7 @@ describe('Tests server landing page controller', () => {
   it('should verify the http response status is set to 401 in unauthrized requests', () => {
     let error = {
       name: 'UnauthorizedError'
-    }
+    };
     controllerLandingPage.handleUnAuthorizedReqeusts(error, request, response, next);
     expect(response.status.mock.calls[0][0]).toEqual(401);
     expect(response.send.mock.calls[0][0]).toEqual(`Warning: Either your session has expired or you're Unauthorized.
@@ -101,7 +99,7 @@ describe('Tests server landing page controller', () => {
   it('should return 401 for errors other than Unauthorized requests', () => {
     let error = {
       name: 'UnknownError'
-    }
+    };
     controllerLandingPage.handleUnAuthorizedReqeusts(error, request, response, next);
     expect(response.status.mock.calls[0][0]).toEqual(401);
     expect(response.send.mock.calls[0][0]).toEqual('Unexpected error occured');
@@ -119,8 +117,8 @@ describe('Tests server landing page controller', () => {
     controllerLandingPage.handleViewObqRequest(request, response, next);
     expect(response.render.mock.calls[0][0]).toEqual('main_jade');
     expect(response.render.mock.calls[0][1]).toEqual({
-      title : 'Hello World',
-      user: "{\"userid\":1,\"cssCommon\":\"\"}",
+      title: 'Hello World',
+      user: '{"userid":1,"cssCommon":""}',
       cssCommon: '',
       appInit: JSON.stringify(initAppState)
     });

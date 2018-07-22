@@ -51,35 +51,35 @@ class LandingPage {
 
   getCodeCards () {
     return [{
-          category: 'Programming Blogs',
-          title: 'PG1: A'
-         },{
-          category: 'Programming Blogs',
-          title: 'PG1: B'
-         },{
-          category: 'Programming Blogs',
-          title: 'PG1: C'
-         },{
-          category: 'Code Fight Challenge',
-          title: 'Fight: Arrays'
-         },{
-          category: 'Code Fight Challenge',
-          title: 'Fight: Strings'
-         },{
-          category: 'Daily Summary',
-          title: 'Day 1'
-         },{
-          category: 'Daily Summary',
-          title: 'Day 2'
-         },{
-          category: 'Daily Summary',
-          title: 'Day 3'
-         }];
+      category: 'Programming Blogs',
+      title: 'PG1: A'
+    }, {
+      category: 'Programming Blogs',
+      title: 'PG1: B'
+    }, {
+      category: 'Programming Blogs',
+      title: 'PG1: C'
+    }, {
+      category: 'Code Fight Challenge',
+      title: 'Fight: Arrays'
+    }, {
+      category: 'Code Fight Challenge',
+      title: 'Fight: Strings'
+    }, {
+      category: 'Daily Summary',
+      title: 'Day 1'
+    }, {
+      category: 'Daily Summary',
+      title: 'Day 2'
+    }, {
+      category: 'Daily Summary',
+      title: 'Day 3'
+    }];
   }
 
   handleViewObqRequest (request, response, next) {
     let user = _.get(request, 'session.user') || {
-      id:1,
+      id: 1,
       cssCommon: ''
     };
 
@@ -90,18 +90,18 @@ class LandingPage {
       let codeCards = this.getCodeCards();
       let appInit = {
         title,
-        showCodeDrawer: false ,
+        showCodeDrawer: false,
         selectedCodeDrawerItem: '',
         codeCategories: [{
-            caption: 'Programming Blogs',
-            legend: 'July 21, 2018'
-          },{
-            caption: 'Code Fight Challenge',
-            legend: 'July 21, 2018'
-          },{
-            caption: 'Daily Summary',
-            legend: 'July 21, 2018'
-          }],
+          caption: 'Programming Blogs',
+          legend: 'July 21, 2018'
+        }, {
+          caption: 'Code Fight Challenge',
+          legend: 'July 21, 2018'
+        }, {
+          caption: 'Daily Summary',
+          legend: 'July 21, 2018'
+        }],
         codeCards: codeCards,
         selectedCodeCards: codeCards
       };
@@ -114,7 +114,7 @@ class LandingPage {
       title: title,
       user: JSON.stringify(user),
       cssCommon: user.cssCommon,
-      appInit: JSON.stringify(appInit),
+      appInit: JSON.stringify(appInit)
     };
   }
 

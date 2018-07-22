@@ -3,7 +3,7 @@ import thunk from 'redux-thunk';
 import _ from 'lodash';
 
 let defaultState = { };
-import { TOGGLE_CODE_DRAWER, SET_SELECTED_CODE_DRAWER_ITEM,   SHOW_APP_INIT } from './actions';
+import { TOGGLE_CODE_DRAWER, SET_SELECTED_CODE_DRAWER_ITEM, SHOW_APP_INIT } from './actions';
 // global appInit
 let initState = _.isUndefined(window.appInit)
   ? defaultState : window.appInit;
@@ -11,7 +11,7 @@ let initState = _.isUndefined(window.appInit)
 const app = function (state, action) {
   switch (action.type) {
     case SHOW_APP_INIT:
-      return action.data; 
+      return action.data;
     case TOGGLE_CODE_DRAWER:
       return Object.assign({}, state, { showCodeDrawer: !state.showCodeDrawer });
     case SET_SELECTED_CODE_DRAWER_ITEM:
@@ -19,7 +19,8 @@ const app = function (state, action) {
       let selectedCodeCards = _.filter(state.codeCards, { category: selectedCodeDrawerItem });
       return Object.assign({}, state, {
         showCodeDrawer: !state.showCodeDrawer,
-        selectedCodeCards, selectedCodeDrawerItem
+        selectedCodeCards,
+        selectedCodeDrawerItem
       });
     default:
       return state;

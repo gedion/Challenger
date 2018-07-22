@@ -9,7 +9,7 @@ import CodeDrawer from './CodeDrawer';
 import CodeCard from './CodeCard';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
-import { toggleCodeDrawer, setDrawerListItem}
+import { toggleCodeDrawer, setDrawerListItem }
   from '../actions';
 
 class App extends React.Component {
