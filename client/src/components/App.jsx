@@ -8,6 +8,7 @@ import Link from 'react-toolbox/lib/link';
 import CodeDrawer from './CodeDrawer';
 import CodeCard from './CodeCard';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import ProgressBar from 'react-toolbox/lib/progress_bar';
 
 import { toggleCodeDrawer, setDrawerListItem }
   from '../actions';
@@ -37,20 +38,24 @@ class App extends React.Component {
   }
 
   render () {
+    let { runResults } = this.props;
     return (
       <div>
         {this.appBarTest()}
+        {this.props.showProgressBar &&
+          <ProgressBar mode="indeterminate" /> }
         <CodeDrawer show={this.props.showCodeDrawer}
           handleToggle={this.handleCodeDrawerToggle}
           onListItemClick={this.handeCodeDrawerListItemClick}
           codeCategories={this.props.codeCategories}
+          showProgressBar={this.props.showProgressBar}
         />
       <br />
       <Grid fluid>
         <Row>
           {_.map(this.props.selectedCodeCards, ((card, index) => {
-            return (<Col xs={6} md={3} key={index} >
-              <CodeCard {...card} />
+            return (<Col key={index} >
+              <CodeCard runResults={runResults}  {...card} />
             </Col>);
           }))}
         </Row>
@@ -66,7 +71,9 @@ App.propTypes = {
   toggleCodeDrawer: PropTypes.func,
   codeCategories: PropTypes.array,
   selectedCodeCard: PropTypes.array,
-  category: PropTypes.string
+  category: PropTypes.string,
+  runResults: PropTypes.array,
+  showProgressBar: PropTypes.bool
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {

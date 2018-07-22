@@ -77,14 +77,14 @@ exports[`Tests client components renders app correctly 1`] = `
       className="row"
     >
       <div
-        className="col-xs-6 col-md-3"
+        className=""
       >
         <div
           className="undefined"
           data-react-toolbox="card"
           style={
             Object {
-              "width": "275px",
+              "width": "400px",
             }
           }
         >
@@ -116,42 +116,6 @@ exports[`Tests client components renders app correctly 1`] = `
             </div>
           </div>
           <div
-            className="undefined"
-            style={
-              Object {
-                "backgroundColor": undefined,
-                "backgroundImage": "url('https://placeimg.com/800/450/nature')",
-              }
-            }
-          >
-            <div
-              className=""
-            />
-          </div>
-          <div
-            className="undefined"
-          >
-            <div>
-              <h5
-                className={undefined}
-              >
-                Title goes here
-              </h5>
-              <p
-                className={undefined}
-              >
-                Subtitle here
-              </p>
-            </div>
-          </div>
-          <div
-            className=""
-          >
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry
-            </p>
-          </div>
-          <div
             className=""
           >
             <button
@@ -171,14 +135,14 @@ exports[`Tests client components renders app correctly 1`] = `
         </div>
       </div>
       <div
-        className="col-xs-6 col-md-3"
+        className=""
       >
         <div
           className="undefined"
           data-react-toolbox="card"
           style={
             Object {
-              "width": "275px",
+              "width": "400px",
             }
           }
         >
@@ -210,42 +174,6 @@ exports[`Tests client components renders app correctly 1`] = `
             </div>
           </div>
           <div
-            className="undefined"
-            style={
-              Object {
-                "backgroundColor": undefined,
-                "backgroundImage": "url('https://placeimg.com/800/450/nature')",
-              }
-            }
-          >
-            <div
-              className=""
-            />
-          </div>
-          <div
-            className="undefined"
-          >
-            <div>
-              <h5
-                className={undefined}
-              >
-                Title goes here
-              </h5>
-              <p
-                className={undefined}
-              >
-                Subtitle here
-              </p>
-            </div>
-          </div>
-          <div
-            className=""
-          >
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry
-            </p>
-          </div>
-          <div
             className=""
           >
             <button
@@ -265,14 +193,14 @@ exports[`Tests client components renders app correctly 1`] = `
         </div>
       </div>
       <div
-        className="col-xs-6 col-md-3"
+        className=""
       >
         <div
           className="undefined"
           data-react-toolbox="card"
           style={
             Object {
-              "width": "275px",
+              "width": "400px",
             }
           }
         >
@@ -302,42 +230,6 @@ exports[`Tests client components renders app correctly 1`] = `
                 Programming Blogs
               </p>
             </div>
-          </div>
-          <div
-            className="undefined"
-            style={
-              Object {
-                "backgroundColor": undefined,
-                "backgroundImage": "url('https://placeimg.com/800/450/nature')",
-              }
-            }
-          >
-            <div
-              className=""
-            />
-          </div>
-          <div
-            className="undefined"
-          >
-            <div>
-              <h5
-                className={undefined}
-              >
-                Title goes here
-              </h5>
-              <p
-                className={undefined}
-              >
-                Subtitle here
-              </p>
-            </div>
-          </div>
-          <div
-            className=""
-          >
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry
-            </p>
           </div>
           <div
             className=""

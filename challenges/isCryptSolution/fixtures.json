@@ -1,0 +1,86 @@
+[{
+    "crypt": ["SEND", "MORE", "MONEY"],
+    "solution": [
+        ["O", "0"],
+        ["M", "1"],
+        ["Y", "2"],
+        ["E", "5"],
+        ["N", "6"],
+        ["D", "7"],
+        ["R", "8"],
+        ["S", "9"]
+    ],
+    "answer": true
+}, {
+    "crypt": ["TEN", "TWO", "ONE"],
+    "solution": [
+        ["O", "1"],
+        ["T", "0"],
+        ["W", "9"],
+        ["E", "5"],
+        ["N", "4"]
+    ],
+    "answer": false
+}, {
+    "crypt": ["ONE", "ONE", "TWO"],
+    "solution": [
+        ["O", "2"],
+        ["T", "4"],
+        ["W", "6"],
+        ["E", "1"],
+        ["N", "3"]
+    ],
+    "answer": true
+}, {
+    "crypt": ["ONE", "ONE", "TWO"],
+    "solution": [
+        ["O", "0"],
+        ["T", "1"],
+        ["W", "2"],
+        ["E", "5"],
+        ["N", "6"]
+    ],
+    "answer": false
+}, {
+    "crypt": ["A", "A", "A"],
+    "solution": [
+        ["A", "0"]
+    ],
+    "answer": true
+}, {
+    "crypt": ["A", "B", "C"],
+    "solution": [
+        ["A", "5"],
+        ["B", "6"],
+        ["C", "1"]
+    ],
+    "answer": false
+}, {
+    "crypt": ["AA", "AA", "AA"],
+    "solution": [
+        ["A", "0"]
+    ],
+    "answer": false
+}, {
+    "crypt": ["A", "A", "A"],
+    "solution": [
+        ["A", "1"]
+    ],
+    "answer": false
+}, {
+    "crypt": ["AA", "AA", "BB"],
+    "solution": [
+        ["A", "1"],
+        ["B", "2"]
+    ],
+    "answer": true
+}, {
+    "crypt": ["BAA", "CAB", "DAB"],
+    "solution": [
+        ["A", "0"],
+        ["B", "1"],
+        ["C", "2"],
+        ["D", "4"]
+    ],
+    "answer": false
+}]

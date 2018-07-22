@@ -3,6 +3,7 @@ import React from 'react';
 import _ from 'lodash';
 import PropTypes from 'prop-types';
 import { List, ListItem, ListSubHeader } from 'react-toolbox/lib/list';
+import ProgressBar from 'react-toolbox/lib/progress_bar';
 
 class CodeDrawer extends React.Component {
 
@@ -10,6 +11,8 @@ class CodeDrawer extends React.Component {
     return (
       <div>
         <Drawer active={this.props.show} onOverlayClick={this.props.handleToggle}>
+        {this.props.showProgressBar &&
+          <ProgressBar type="circular" mode="indeterminate" /> }
           <List selectable ripple>
             <ListSubHeader caption='Programming' />
               {_.map(this.props.codeCategories,((cat, index) => {
@@ -33,7 +36,8 @@ CodeDrawer.propTypes = {
   handleToggle: PropTypes.func,
   onListItemClick: PropTypes.func,
   show: PropTypes.bool,
-  codeCategories: PropTypes.array
+  codeCategories: PropTypes.array,
+  showProgressBar: PropTypes.bool
 };
 
 export default CodeDrawer;

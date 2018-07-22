@@ -82,7 +82,8 @@ class LandingPage {
       id: 1,
       cssCommon: ''
     };
-
+    request.session.user = user;
+    request.session.apiToken = this.buildToken(user);
     if (!_.isObject(user)) {
       next({name: 'UnauthorizedError'});
     } else {
@@ -90,7 +91,9 @@ class LandingPage {
       let codeCards = this.getCodeCards();
       let appInit = {
         title,
+        runResults: [],
         showCodeDrawer: false,
+        showProgressBar: false,
         selectedCodeDrawerItem: 'Programming Blogs',
         codeCategories: [{
           caption: 'Programming Blogs',
