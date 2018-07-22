@@ -91,7 +91,7 @@ class LandingPage {
       let appInit = {
         title,
         showCodeDrawer: false,
-        selectedCodeDrawerItem: '',
+        selectedCodeDrawerItem: 'Programming Blogs',
         codeCategories: [{
           caption: 'Programming Blogs',
           legend: 'July 21, 2018'
@@ -103,7 +103,7 @@ class LandingPage {
           legend: 'July 21, 2018'
         }],
         codeCards: codeCards,
-        selectedCodeCards: codeCards
+        selectedCodeCards: _.filter(codeCards, { category: 'Programming Blogs' })
       };
       response.render('main_jade', this.buildHttpResponse(title, user, appInit));
     }

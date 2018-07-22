@@ -28,10 +28,10 @@ class App extends React.Component {
   }
 
   appBarTest () {
-    return (<AppBar title={this.props.title} leftIcon='menu' >
+    return (<AppBar onLeftIconClick={this.handleCodeDrawerToggle} title={''} leftIcon='menu' >
       <Navigation type='horizontal'>
-        <Link href='http://' label='Inbox' icon='inbox' />
-        <Link href='http://' active label='Profile' icon='person' />
+        <Link href='#' icon='Curriculum Vitae' />
+        <Link target="_blank" href='https://www.github.com/gedion' active icon='GitHub' />
       </Navigation>
     </AppBar>);
   }
@@ -45,6 +45,7 @@ class App extends React.Component {
           onListItemClick={this.handeCodeDrawerListItemClick}
           codeCategories={this.props.codeCategories}
         />
+      <br />
       <Grid fluid>
         <Row>
           {_.map(this.props.selectedCodeCards, ((card, index) => {
