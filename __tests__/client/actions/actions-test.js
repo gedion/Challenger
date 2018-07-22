@@ -29,12 +29,12 @@ describe('Tests client actions', () => {
   it('it should filter selectedCodeCards but not codeCards accordingly when selectedCodeDrawerItem is modified', () => {
     let { dispatch } = store;
     let { showCodeDrawer, selectedCodeCards, codeCards } = store.getState();
-    expect(selectedCodeCards).toHaveLength(8);
+    expect(selectedCodeCards).toHaveLength(3);
     expect(codeCards).toHaveLength(8);
-    setDrawerListItem(dispatch, 'Programming Blogs');
+    setDrawerListItem(dispatch, 'Code Fight Challenge');
     selectedCodeCards = _.get(store.getState(), 'selectedCodeCards');
     codeCards = _.get(store.getState(), 'codeCards');
-    expect(selectedCodeCards).not.toHaveLength(8);
+    expect(selectedCodeCards).toHaveLength(2);
     expect(codeCards).toHaveLength(8);
     expect(showCodeDrawer).toBe(false);
   });

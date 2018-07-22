@@ -1,7 +1,7 @@
 {
   "title": "Hello World",
   "showCodeDrawer": false,
-  "selectedCodeDrawerItem": "",
+  "selectedCodeDrawerItem": "Programming Blogs",
   "codeCategories": [
     {
       "caption": "Programming Blogs",
@@ -62,26 +62,6 @@
     {
       "category": "Programming Blogs",
       "title": "PG1: C"
-    },
-    {
-      "category": "Code Fight Challenge",
-      "title": "Fight: Arrays"
-    },
-    {
-      "category": "Code Fight Challenge",
-      "title": "Fight: Strings"
-    },
-    {
-      "category": "Daily Summary",
-      "title": "Day 1"
-    },
-    {
-      "category": "Daily Summary",
-      "title": "Day 2"
-    },
-    {
-      "category": "Daily Summary",
-      "title": "Day 3"
     }
   ]
 }

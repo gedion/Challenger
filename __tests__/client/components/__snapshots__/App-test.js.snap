@@ -14,7 +14,7 @@ exports[`Tests client components renders app correctly 1`] = `
         data-react-toolbox="button"
         disabled={false}
         href={undefined}
-        onClick={undefined}
+        onClick={[Function]}
         onMouseDown={[Function]}
         onMouseLeave={[Function]}
         onMouseUp={[Function]}
@@ -32,7 +32,7 @@ exports[`Tests client components renders app correctly 1`] = `
       <h1
         className=""
       >
-        Hello World
+        
       </h1>
       <nav
         className=""
@@ -41,54 +41,35 @@ exports[`Tests client components renders app correctly 1`] = `
         <a
           className=""
           data-react-toolbox="link"
-          href="http://"
+          href="#"
         >
           <span
             aria-label=""
             className="material-icons"
             data-react-toolbox="font-icon"
           >
-            inbox
+            Curriculum Vitae
           </span>
-          <abbr>
-            Inbox
-          </abbr>
         </a>
         <a
           className="undefined"
           data-react-toolbox="link"
-          href="http://"
+          href="https://www.github.com/gedion"
+          target="_blank"
         >
           <span
             aria-label=""
             className="material-icons"
             data-react-toolbox="font-icon"
           >
-            person
+            GitHub
           </span>
-          <abbr>
-            Profile
-          </abbr>
         </a>
       </nav>
     </div>
   </header>
-  <div>
-    <button
-      className=""
-      data-react-toolbox="button"
-      disabled={false}
-      href={undefined}
-      onClick={[Function]}
-      onMouseDown={[Function]}
-      onMouseLeave={[Function]}
-      onMouseUp={[Function]}
-      onTouchStart={[Function]}
-      type="button"
-    >
-      Show Drawer
-    </button>
-  </div>
+  <div />
+  <br />
   <div
     className="container-fluid"
   >
@@ -319,476 +300,6 @@ exports[`Tests client components renders app correctly 1`] = `
                 className={undefined}
               >
                 Programming Blogs
-              </p>
-            </div>
-          </div>
-          <div
-            className="undefined"
-            style={
-              Object {
-                "backgroundColor": undefined,
-                "backgroundImage": "url('https://placeimg.com/800/450/nature')",
-              }
-            }
-          >
-            <div
-              className=""
-            />
-          </div>
-          <div
-            className="undefined"
-          >
-            <div>
-              <h5
-                className={undefined}
-              >
-                Title goes here
-              </h5>
-              <p
-                className={undefined}
-              >
-                Subtitle here
-              </p>
-            </div>
-          </div>
-          <div
-            className=""
-          >
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry
-            </p>
-          </div>
-          <div
-            className=""
-          >
-            <button
-              className=""
-              data-react-toolbox="button"
-              disabled={false}
-              href={undefined}
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchStart={[Function]}
-              type="button"
-            >
-              Action 1
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        className="col-xs-6 col-md-3"
-      >
-        <div
-          className="undefined"
-          data-react-toolbox="card"
-          style={
-            Object {
-              "width": "275px",
-            }
-          }
-        >
-          <div
-            className=""
-          >
-            <div
-              className=""
-              data-react-toolbox="avatar"
-            >
-              <img
-                alt=""
-                className={undefined}
-                src="https://placeimg.com/80/80/animals"
-                title={undefined}
-              />
-            </div>
-            <div>
-              <h5
-                className={undefined}
-              >
-                Fight: Arrays
-              </h5>
-              <p
-                className={undefined}
-              >
-                Code Fight Challenge
-              </p>
-            </div>
-          </div>
-          <div
-            className="undefined"
-            style={
-              Object {
-                "backgroundColor": undefined,
-                "backgroundImage": "url('https://placeimg.com/800/450/nature')",
-              }
-            }
-          >
-            <div
-              className=""
-            />
-          </div>
-          <div
-            className="undefined"
-          >
-            <div>
-              <h5
-                className={undefined}
-              >
-                Title goes here
-              </h5>
-              <p
-                className={undefined}
-              >
-                Subtitle here
-              </p>
-            </div>
-          </div>
-          <div
-            className=""
-          >
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry
-            </p>
-          </div>
-          <div
-            className=""
-          >
-            <button
-              className=""
-              data-react-toolbox="button"
-              disabled={false}
-              href={undefined}
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchStart={[Function]}
-              type="button"
-            >
-              Action 1
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        className="col-xs-6 col-md-3"
-      >
-        <div
-          className="undefined"
-          data-react-toolbox="card"
-          style={
-            Object {
-              "width": "275px",
-            }
-          }
-        >
-          <div
-            className=""
-          >
-            <div
-              className=""
-              data-react-toolbox="avatar"
-            >
-              <img
-                alt=""
-                className={undefined}
-                src="https://placeimg.com/80/80/animals"
-                title={undefined}
-              />
-            </div>
-            <div>
-              <h5
-                className={undefined}
-              >
-                Fight: Strings
-              </h5>
-              <p
-                className={undefined}
-              >
-                Code Fight Challenge
-              </p>
-            </div>
-          </div>
-          <div
-            className="undefined"
-            style={
-              Object {
-                "backgroundColor": undefined,
-                "backgroundImage": "url('https://placeimg.com/800/450/nature')",
-              }
-            }
-          >
-            <div
-              className=""
-            />
-          </div>
-          <div
-            className="undefined"
-          >
-            <div>
-              <h5
-                className={undefined}
-              >
-                Title goes here
-              </h5>
-              <p
-                className={undefined}
-              >
-                Subtitle here
-              </p>
-            </div>
-          </div>
-          <div
-            className=""
-          >
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry
-            </p>
-          </div>
-          <div
-            className=""
-          >
-            <button
-              className=""
-              data-react-toolbox="button"
-              disabled={false}
-              href={undefined}
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchStart={[Function]}
-              type="button"
-            >
-              Action 1
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        className="col-xs-6 col-md-3"
-      >
-        <div
-          className="undefined"
-          data-react-toolbox="card"
-          style={
-            Object {
-              "width": "275px",
-            }
-          }
-        >
-          <div
-            className=""
-          >
-            <div
-              className=""
-              data-react-toolbox="avatar"
-            >
-              <img
-                alt=""
-                className={undefined}
-                src="https://placeimg.com/80/80/animals"
-                title={undefined}
-              />
-            </div>
-            <div>
-              <h5
-                className={undefined}
-              >
-                Day 1
-              </h5>
-              <p
-                className={undefined}
-              >
-                Daily Summary
-              </p>
-            </div>
-          </div>
-          <div
-            className="undefined"
-            style={
-              Object {
-                "backgroundColor": undefined,
-                "backgroundImage": "url('https://placeimg.com/800/450/nature')",
-              }
-            }
-          >
-            <div
-              className=""
-            />
-          </div>
-          <div
-            className="undefined"
-          >
-            <div>
-              <h5
-                className={undefined}
-              >
-                Title goes here
-              </h5>
-              <p
-                className={undefined}
-              >
-                Subtitle here
-              </p>
-            </div>
-          </div>
-          <div
-            className=""
-          >
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry
-            </p>
-          </div>
-          <div
-            className=""
-          >
-            <button
-              className=""
-              data-react-toolbox="button"
-              disabled={false}
-              href={undefined}
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchStart={[Function]}
-              type="button"
-            >
-              Action 1
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        className="col-xs-6 col-md-3"
-      >
-        <div
-          className="undefined"
-          data-react-toolbox="card"
-          style={
-            Object {
-              "width": "275px",
-            }
-          }
-        >
-          <div
-            className=""
-          >
-            <div
-              className=""
-              data-react-toolbox="avatar"
-            >
-              <img
-                alt=""
-                className={undefined}
-                src="https://placeimg.com/80/80/animals"
-                title={undefined}
-              />
-            </div>
-            <div>
-              <h5
-                className={undefined}
-              >
-                Day 2
-              </h5>
-              <p
-                className={undefined}
-              >
-                Daily Summary
-              </p>
-            </div>
-          </div>
-          <div
-            className="undefined"
-            style={
-              Object {
-                "backgroundColor": undefined,
-                "backgroundImage": "url('https://placeimg.com/800/450/nature')",
-              }
-            }
-          >
-            <div
-              className=""
-            />
-          </div>
-          <div
-            className="undefined"
-          >
-            <div>
-              <h5
-                className={undefined}
-              >
-                Title goes here
-              </h5>
-              <p
-                className={undefined}
-              >
-                Subtitle here
-              </p>
-            </div>
-          </div>
-          <div
-            className=""
-          >
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry
-            </p>
-          </div>
-          <div
-            className=""
-          >
-            <button
-              className=""
-              data-react-toolbox="button"
-              disabled={false}
-              href={undefined}
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchStart={[Function]}
-              type="button"
-            >
-              Action 1
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        className="col-xs-6 col-md-3"
-      >
-        <div
-          className="undefined"
-          data-react-toolbox="card"
-          style={
-            Object {
-              "width": "275px",
-            }
-          }
-        >
-          <div
-            className=""
-          >
-            <div
-              className=""
-              data-react-toolbox="avatar"
-            >
-              <img
-                alt=""
-                className={undefined}
-                src="https://placeimg.com/80/80/animals"
-                title={undefined}
-              />
-            </div>
-            <div>
-              <h5
-                className={undefined}
-              >
-                Day 3
-              </h5>
-              <p
-                className={undefined}
-              >
-                Daily Summary
               </p>
             </div>
           </div>
