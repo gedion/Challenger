@@ -19,6 +19,8 @@
     "@instructure/ui-menu": "^5.7.0",
     "@instructure/ui-overlays": "^5.7.0",
     "@instructure/ui-themes": "^5.7.0",
+    "@material-ui/core": "^1.4.1",
+    "@material-ui/icons": "^2.0.0",
     "axios": "^0.16.2",
     "body-parser": "^1.18.2",
     "canvas-lms-api": "^0.2.0",

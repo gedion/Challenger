@@ -2,16 +2,33 @@ import React from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
 import PropTypes from 'prop-types';
-import AppBar from 'react-toolbox/lib/app_bar';
 import Navigation from 'react-toolbox/lib/navigation';
 import Link from 'react-toolbox/lib/link';
 import CodeDrawer from './CodeDrawer';
 import CodeCard from './CodeCard';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+//import { Grid, Row, Col } from 'react-flexbox-grid';
 import ProgressBar from 'react-toolbox/lib/progress_bar';
+
+import { withStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import Grid from '@material-ui/core/Grid';
 
 import { toggleCodeDrawer, setDrawerListItem }
   from '../actions';
+
+const styles = {
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginLeft: -18,
+    marginRight: 10,
+  },
+};
 
 class App extends React.Component {
   constructor (props) {
@@ -36,12 +53,28 @@ class App extends React.Component {
       </Navigation>
     </AppBar>);
   }
+  appBar () {
+    const { classes } = this.props;
+    return (<div onClick={this.handleCodeDrawerToggle} className={classes.root}>
+      <AppBar position="static">
+        <Toolbar variant="dense">
+          <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="title" color="inherit">
+            Programmer
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </div>);
+  }
 
   render () {
+    const { classes } = this.props;
     let { runResults } = this.props;
     return (
       <div>
-        {this.appBarTest()}
+        {this.appBar()}
         {this.props.showProgressBar &&
           <ProgressBar mode="indeterminate" /> }
         <CodeDrawer show={this.props.showCodeDrawer}
@@ -51,14 +84,16 @@ class App extends React.Component {
           showProgressBar={this.props.showProgressBar}
         />
       <br />
-      <Grid fluid>
-        <Row>
-          {_.map(this.props.selectedCodeCards, ((card, index) => {
-            return (<Col key={index} >
-              <CodeCard runResults={runResults}  {...card} />
-            </Col>);
-          }))}
-        </Row>
+      <Grid container className={classes.root} spacing={16}>
+        <Grid item xs={12}>
+          <Grid container className={classes.demo} justify="center" spacing={Number(16)}>
+            {_.map(this.props.selectedCodeCards, ((card, index) => {
+              return (<Grid key={index} item>
+                <CodeCard runResults={runResults}  {...card} />
+              </Grid>)
+            }))}
+          </Grid>
+        </Grid>
       </Grid>
       </div>
     );
@@ -73,7 +108,8 @@ App.propTypes = {
   selectedCodeCard: PropTypes.array,
   category: PropTypes.string,
   runResults: PropTypes.array,
-  showProgressBar: PropTypes.bool
+  showProgressBar: PropTypes.bool,
+  classes: PropTypes.object.isRequired,
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
@@ -100,7 +136,4 @@ const mergeProps = (stateProps, dispatchProps, ownProps) => {
   };
 };
 
-App.propTypes = {
-};
-
-export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(withStyles(styles)(App));
