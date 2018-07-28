@@ -2,251 +2,301 @@
 
 exports[`Tests client components renders app correctly 1`] = `
 <div>
-  <header
-    className=""
-    data-react-toolbox="app-bar"
+  <div
+    className="App-root-1"
+    onClick={[Function]}
   >
-    <div
-      className={undefined}
+    <header
+      className="MuiPaper-root-11 MuiPaper-elevation4-17 MuiAppBar-root-3 MuiAppBar-positionStatic-7 MuiAppBar-colorPrimary-9"
     >
-      <button
-        className="undefined"
-        data-react-toolbox="button"
-        disabled={false}
-        href={undefined}
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchStart={[Function]}
-        type="button"
+      <div
+        className="MuiToolbar-root-38 MuiToolbar-dense-41 MuiToolbar-gutters-39"
       >
-        <span
-          aria-label=""
-          className="material-icons"
-          data-react-toolbox="font-icon"
-        >
-          menu
-        </span>
-      </button>
-      <h1
-        className=""
-      >
-        
-      </h1>
-      <nav
-        className=""
-        data-react-toolbox="navigation"
-      >
-        <a
-          className=""
-          data-react-toolbox="link"
-          href="#"
+        <button
+          aria-label="Menu"
+          className="MuiButtonBase-root-48 MuiIconButton-root-42 MuiIconButton-colorInherit-43 App-menuButton-2"
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
         >
           <span
-            aria-label=""
-            className="material-icons"
-            data-react-toolbox="font-icon"
+            className="MuiIconButton-label-47"
           >
-            Curriculum Vitae
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-51"
+              color={undefined}
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              />
+            </svg>
           </span>
-        </a>
-        <a
-          className="undefined"
-          data-react-toolbox="link"
-          href="https://www.github.com/gedion"
-          target="_blank"
-        >
           <span
-            aria-label=""
-            className="material-icons"
-            data-react-toolbox="font-icon"
-          >
-            GitHub
-          </span>
-        </a>
-      </nav>
-    </div>
-  </header>
+            className="MuiTouchRipple-root-58"
+          />
+        </button>
+        <h2
+          className="MuiTypography-root-65 MuiTypography-title-71 MuiTypography-colorInherit-84"
+        >
+          Programmer
+        </h2>
+      </div>
+    </header>
+  </div>
   <div />
   <br />
   <div
-    className="container-fluid"
+    className="MuiGrid-container-89 MuiGrid-spacing-xs-16-112 App-root-1"
   >
     <div
-      className="row"
+      className="MuiGrid-item-90 MuiGrid-grid-xs-12-129"
     >
       <div
-        className=""
+        className="MuiGrid-container-89 MuiGrid-spacing-xs-16-112 MuiGrid-justify-xs-center-106"
       >
         <div
-          className="undefined"
-          data-react-toolbox="card"
-          style={
-            Object {
-              "width": "400px",
-            }
-          }
+          className="MuiGrid-item-90"
         >
-          <div
-            className=""
-          >
+          <div>
             <div
-              className=""
-              data-react-toolbox="avatar"
+              className="MuiPaper-root-11 MuiPaper-elevation1-14 MuiPaper-rounded-12 MuiCard-root-190 CodeCard-card-186"
             >
-              <img
-                alt=""
-                className={undefined}
-                src="https://placeimg.com/80/80/animals"
-                title={undefined}
-              />
-            </div>
-            <div>
-              <h5
-                className={undefined}
+              <div
+                className="MuiCardContent-root-191"
               >
-                PG1: A
-              </h5>
-              <p
-                className={undefined}
+                <p
+                  className="MuiTypography-root-65 MuiTypography-body1-74 MuiTypography-colorTextSecondary-87 CodeCard-title-188"
+                >
+                  PG1: A
+                </p>
+                <h2
+                  className="MuiTypography-root-65 MuiTypography-headline-70"
+                >
+                  be
+                  <span
+                    className="CodeCard-bullet-187"
+                  >
+                    •
+                  </span>
+                  nev
+                  <span
+                    className="CodeCard-bullet-187"
+                  >
+                    •
+                  </span>
+                  o
+                  <span
+                    className="CodeCard-bullet-187"
+                  >
+                    •
+                  </span>
+                  lent
+                </h2>
+                <p
+                  className="MuiTypography-root-65 MuiTypography-body1-74 MuiTypography-colorTextSecondary-87 CodeCard-pos-189"
+                >
+                  Programming Blogs
+                </p>
+              </div>
+              <div
+                className="MuiCardActions-root-192"
               >
-                Programming Blogs
-              </p>
+                <button
+                  className="MuiButtonBase-root-48 MuiButton-root-194 MuiButton-text-196 MuiButton-flat-199 MuiButton-sizeSmall-215 MuiCardActions-action-193"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex="0"
+                  type="button"
+                >
+                  <span
+                    className="MuiButton-label-195"
+                  >
+                    Learn More
+                  </span>
+                  <span
+                    className="MuiTouchRipple-root-58"
+                  />
+                </button>
+              </div>
             </div>
-          </div>
-          <div
-            className=""
-          >
-            <button
-              className=""
-              data-react-toolbox="button"
-              disabled={false}
-              href={undefined}
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchStart={[Function]}
-              type="button"
-            >
-              Action 1
-            </button>
           </div>
         </div>
-      </div>
-      <div
-        className=""
-      >
         <div
-          className="undefined"
-          data-react-toolbox="card"
-          style={
-            Object {
-              "width": "400px",
-            }
-          }
+          className="MuiGrid-item-90"
         >
-          <div
-            className=""
-          >
+          <div>
             <div
-              className=""
-              data-react-toolbox="avatar"
+              className="MuiPaper-root-11 MuiPaper-elevation1-14 MuiPaper-rounded-12 MuiCard-root-190 CodeCard-card-186"
             >
-              <img
-                alt=""
-                className={undefined}
-                src="https://placeimg.com/80/80/animals"
-                title={undefined}
-              />
-            </div>
-            <div>
-              <h5
-                className={undefined}
+              <div
+                className="MuiCardContent-root-191"
               >
-                PG1: B
-              </h5>
-              <p
-                className={undefined}
+                <p
+                  className="MuiTypography-root-65 MuiTypography-body1-74 MuiTypography-colorTextSecondary-87 CodeCard-title-188"
+                >
+                  PG1: B
+                </p>
+                <h2
+                  className="MuiTypography-root-65 MuiTypography-headline-70"
+                >
+                  be
+                  <span
+                    className="CodeCard-bullet-187"
+                  >
+                    •
+                  </span>
+                  nev
+                  <span
+                    className="CodeCard-bullet-187"
+                  >
+                    •
+                  </span>
+                  o
+                  <span
+                    className="CodeCard-bullet-187"
+                  >
+                    •
+                  </span>
+                  lent
+                </h2>
+                <p
+                  className="MuiTypography-root-65 MuiTypography-body1-74 MuiTypography-colorTextSecondary-87 CodeCard-pos-189"
+                >
+                  Programming Blogs
+                </p>
+              </div>
+              <div
+                className="MuiCardActions-root-192"
               >
-                Programming Blogs
-              </p>
+                <button
+                  className="MuiButtonBase-root-48 MuiButton-root-194 MuiButton-text-196 MuiButton-flat-199 MuiButton-sizeSmall-215 MuiCardActions-action-193"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex="0"
+                  type="button"
+                >
+                  <span
+                    className="MuiButton-label-195"
+                  >
+                    Learn More
+                  </span>
+                  <span
+                    className="MuiTouchRipple-root-58"
+                  />
+                </button>
+              </div>
             </div>
-          </div>
-          <div
-            className=""
-          >
-            <button
-              className=""
-              data-react-toolbox="button"
-              disabled={false}
-              href={undefined}
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchStart={[Function]}
-              type="button"
-            >
-              Action 1
-            </button>
           </div>
         </div>
-      </div>
-      <div
-        className=""
-      >
         <div
-          className="undefined"
-          data-react-toolbox="card"
-          style={
-            Object {
-              "width": "400px",
-            }
-          }
+          className="MuiGrid-item-90"
         >
-          <div
-            className=""
-          >
+          <div>
             <div
-              className=""
-              data-react-toolbox="avatar"
+              className="MuiPaper-root-11 MuiPaper-elevation1-14 MuiPaper-rounded-12 MuiCard-root-190 CodeCard-card-186"
             >
-              <img
-                alt=""
-                className={undefined}
-                src="https://placeimg.com/80/80/animals"
-                title={undefined}
-              />
-            </div>
-            <div>
-              <h5
-                className={undefined}
+              <div
+                className="MuiCardContent-root-191"
               >
-                PG1: C
-              </h5>
-              <p
-                className={undefined}
+                <p
+                  className="MuiTypography-root-65 MuiTypography-body1-74 MuiTypography-colorTextSecondary-87 CodeCard-title-188"
+                >
+                  PG1: C
+                </p>
+                <h2
+                  className="MuiTypography-root-65 MuiTypography-headline-70"
+                >
+                  be
+                  <span
+                    className="CodeCard-bullet-187"
+                  >
+                    •
+                  </span>
+                  nev
+                  <span
+                    className="CodeCard-bullet-187"
+                  >
+                    •
+                  </span>
+                  o
+                  <span
+                    className="CodeCard-bullet-187"
+                  >
+                    •
+                  </span>
+                  lent
+                </h2>
+                <p
+                  className="MuiTypography-root-65 MuiTypography-body1-74 MuiTypography-colorTextSecondary-87 CodeCard-pos-189"
+                >
+                  Programming Blogs
+                </p>
+              </div>
+              <div
+                className="MuiCardActions-root-192"
               >
-                Programming Blogs
-              </p>
+                <button
+                  className="MuiButtonBase-root-48 MuiButton-root-194 MuiButton-text-196 MuiButton-flat-199 MuiButton-sizeSmall-215 MuiCardActions-action-193"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex="0"
+                  type="button"
+                >
+                  <span
+                    className="MuiButton-label-195"
+                  >
+                    Learn More
+                  </span>
+                  <span
+                    className="MuiTouchRipple-root-58"
+                  />
+                </button>
+              </div>
             </div>
-          </div>
-          <div
-            className=""
-          >
-            <button
-              className=""
-              data-react-toolbox="button"
-              disabled={false}
-              href={undefined}
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchStart={[Function]}
-              type="button"
-            >
-              Action 1
-            </button>
           </div>
         </div>
       </div>
