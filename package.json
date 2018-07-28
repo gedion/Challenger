@@ -1,5 +1,5 @@
 {
-  "name": "oit-canvas-ppsft-lti-enroll-observer",
+  "name": "Google Interview Preparation",
   "version": "0.0.1",
   "scripts": {
     "build": "cd client && webpack -p --progress --colors --watch",
@@ -8,8 +8,7 @@
     "eslint:ci": "esw -o coverage/eslint.json -f json || echo \"ok eslint\"",
     "test": "NODE_ENV=test && BABEL_DISABLE_CACHE=1 jest ",
     "test:ci": "jest --testResultsProcessor ./node_modules/jest-junit || echo \"Ok tests\"",
-    "testDebug": "NODE_ENV=test node --inspect-brk=0.0.0.0:8443 node_modules/.bin/jest",
-    "reports:ci": "node node_modules/oit-canvas-jenkins-instrument/reports/index.js || echo \"ok reports\""
+    "testDebug": "NODE_ENV=test node --inspect-brk=0.0.0.0:8443 node_modules/.bin/jest"
   },
   "dependencies": {
     "@instructure/ui-buttons": "^5.7.0",
@@ -40,7 +39,6 @@
     "jsonwebtoken": "^8.1.0",
     "moment": "^2.21.0",
     "morgan": "^1.9.0",
-    "nsp": "^3.2.1",
     "passport": "^0.4.0",
     "passport-lti": "0.0.7",
     "react-flexbox-grid": "^2.1.2",
@@ -75,7 +73,6 @@
     "jest-each": "^23.4.0",
     "jest-junit": "^4.0.0",
     "node-eval": "^2.0.0",
-    "oit-canvas-jenkins-instrument": "https://artifactory.umn.edu/artifactory/oit-att-npm-public-local/oit-canvas-jenkins-instrument/-/oit-canvas-jenkins-instrument-1.0.0.tgz",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^4.4.6",
