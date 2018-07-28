@@ -1,6 +1,7 @@
 {
-  "name": "Google Interview Preparation",
+  "name": "google-interview-preparation",
   "version": "0.0.1",
+  "license": "MIT",
   "scripts": {
     "build": "cd client && webpack -p --progress --colors --watch",
     "buildDev": "cd client && webpack --progress --colors --watch",
